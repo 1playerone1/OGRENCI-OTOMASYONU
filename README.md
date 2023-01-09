@@ -1,0 +1,1 @@
+# ÖĞRENCİ OTOMASYONU BARIŞ KAÇİN
