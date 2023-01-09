@@ -3,5 +3,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <h1>Merhaba</h1>
+   <div class="text-center" style="border-bottom-style:solid; border-top-style:solid; border-width:thick">
+       <img src="resimler/1.jpeg" class="rounded" />
+       <img src="resimler/2.jpeg" class="rounded" />
+       <img src="resimler/3.jpeg" class="rounded" />
+       <img src="resimler/4.jpeg" class="rounded" />
+   </div>
 </asp:Content>
