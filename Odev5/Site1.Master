@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Odev5.Site1" %>
+<%--Bu Proje Barış Kaçin tarafından yapılmıştır--%>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ÖĞRENCİ OTOMASYONU BARIŞ KAÇİN</title>
+
+    <%--Kütüphane linkleri--%>
+    <link href="kutuphane/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="kutuphane/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="kutuphane/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css" rel="stylesheet" />
+    <script src="kutuphane/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+    <link href="kutuphane/DataTables/datatables.min.css" rel="stylesheet" />
+    <script src="kutuphane/DataTables/datatables.min.js"></script>
+    <link href="kutuphane/DataTables/DataTables-1.13.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <script src="kutuphane/DataTables/DataTables-1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <%--Kütüphane linkleri--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="d-flex flex-column h-100">
+    <form id="form1" runat="server">
+        <div class="container-3">
+            <%--navbar linkleri--%>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="AnaSayfa.aspx"><i class="fa-solid fa-school-flag"></i> Öğrenci Otomasyonu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="AnaSayfa.aspx">Ana Sayfa</a>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="hakkimizda.aspx">Hakkımızda</a>
+                            </li>
+
+                             <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="iletisim.aspx">İletişim</a>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="calisanlar.aspx">Çalışanlarımız</a>
+                            </li>
+        
+                          </ul>
+
+                             <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton1" class="nav-link active" runat="server">Öğrenci Girişi</asp:LinkButton>
+                            </li>
+
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton2" class="nav-link active" runat="server">Öğretmen Girişi</asp:LinkButton>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton3" class="nav-link active" runat="server">Kayıt OL</asp:LinkButton>
+                            </li>
+
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton4" class="nav-link active" runat="server">Çıkış Yap</asp:LinkButton>
+                            </li>
+                             </ul>
+                        </div>
+                </div>
+            </nav>
+            <%--navbar linkleri--%>
+        </div>
+
+        <%--İÇERİK--%>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--İÇERİK--%>
+
+        <%--footer--%>
+        <footer class="card">
+            <div class="card-header">
+            <ul class="nav justify-content-center"> <%--footer içerik--%>
+                <%--Linkler--%>
+                <%--<li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton5" class="footerlinks" runat="server">Öğretmen Girişi</asp:LinkButton>
+                    </li>
+
+                    <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton6" class="footerlinks" runat="server">Öğrenci Girişi</asp:LinkButton>
+                    </li>--%>
+                <%--Linkler--%>
+            </ul>
+          </div>
+          <div class="card-body">
+
+            <div class="position-relative">
+                <div class="container p-0">
+                    <ul class="nav justify-content-center">
+                        
+                    <p>&copy; <%: DateTime.Now.Year %> - Bütün Hakları Saklıdır.</p>
+    
+                    </ul>   
+                                
+                </div>            
+            </div>  
+          </div>
+        </footer>
+        <%--footer--%>
+    </form>
+</body>
+</html>
