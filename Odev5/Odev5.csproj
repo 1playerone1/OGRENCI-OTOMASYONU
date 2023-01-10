@@ -2193,6 +2193,7 @@
     <Content Include="kutuphane\fontawesome-free-6.2.1-web\fontawesome-free-6.2.1-web\svgs\solid\yin-yang.svg" />
     <Content Include="kutuphane\fontawesome-free-6.2.1-web\fontawesome-free-6.2.1-web\svgs\solid\z.svg" />
     <Content Include="ogrencigiris.aspx" />
+    <Content Include="ogrencikayit.aspx" />
     <Content Include="ogretmengiris.aspx" />
     <Content Include="resimler\1.jpeg" />
     <Content Include="resimler\2.jpeg" />
@@ -2237,6 +2238,13 @@
     </Compile>
     <Compile Include="ogrencigiris.aspx.designer.cs">
       <DependentUpon>ogrencigiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencikayit.aspx.cs">
+      <DependentUpon>ogrencikayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrencikayit.aspx.designer.cs">
+      <DependentUpon>ogrencikayit.aspx</DependentUpon>
     </Compile>
     <Compile Include="ogretmengiris.aspx.cs">
       <DependentUpon>ogretmengiris.aspx</DependentUpon>
