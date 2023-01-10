@@ -3,6 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h3>Öğrenci Otomasyon Sistemi.</h3>
+    <p>Öğrenci Otomasyon Sistemi Barış Kaçin tarafından yapılmıştır.</p>
 </asp:Content>

@@ -83,9 +83,10 @@
             </asp:ContentPlaceHolder>
         </div>
         <%--İÇERİK--%>
-
+        <br />
+        <br />
         <%--footer--%>
-        <footer class="card">
+        <footer class="card me-auto">
             <div class="card-header">
             <ul class="nav justify-content-center"> <%--footer içerik--%>
                 <%--Linkler--%>

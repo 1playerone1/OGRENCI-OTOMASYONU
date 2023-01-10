@@ -2196,7 +2196,6 @@
     <Content Include="resimler\2.jpeg" />
     <Content Include="resimler\3.jpeg" />
     <Content Include="resimler\4.jpeg" />
-    <Content Include="slider.xml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
