@@ -2192,10 +2192,14 @@
     <Content Include="kutuphane\fontawesome-free-6.2.1-web\fontawesome-free-6.2.1-web\svgs\solid\yen-sign.svg" />
     <Content Include="kutuphane\fontawesome-free-6.2.1-web\fontawesome-free-6.2.1-web\svgs\solid\yin-yang.svg" />
     <Content Include="kutuphane\fontawesome-free-6.2.1-web\fontawesome-free-6.2.1-web\svgs\solid\z.svg" />
+    <Content Include="ogrencigiris.aspx" />
+    <Content Include="ogretmengiris.aspx" />
     <Content Include="resimler\1.jpeg" />
     <Content Include="resimler\2.jpeg" />
     <Content Include="resimler\3.jpeg" />
     <Content Include="resimler\4.jpeg" />
+    <Content Include="resimler\adminuser.png" />
+    <Content Include="resimler\generaluser.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2226,6 +2230,20 @@
     </Compile>
     <Compile Include="iletisim.aspx.designer.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencigiris.aspx.cs">
+      <DependentUpon>ogrencigiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrencigiris.aspx.designer.cs">
+      <DependentUpon>ogrencigiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmengiris.aspx.cs">
+      <DependentUpon>ogretmengiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogretmengiris.aspx.designer.cs">
+      <DependentUpon>ogretmengiris.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
