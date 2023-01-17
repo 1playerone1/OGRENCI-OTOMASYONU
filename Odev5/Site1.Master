@@ -83,8 +83,7 @@
             </asp:ContentPlaceHolder>
         </div>
         <%--İÇERİK--%>
-        <br />
-        <br />
+        
         <%--footer--%>
         <footer class="card me-auto">
             <div class="card-header">
