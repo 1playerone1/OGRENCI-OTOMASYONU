@@ -89,12 +89,18 @@
             <div class="card-header">
             <ul class="nav justify-content-center"> <%--footer içerik--%>
                 <%--Linkler--%>
-                <li class="ms-3 text-center">
+                    <li class="ms-3 text-center">
                         <asp:LinkButton ID="LinkButton5" class="footerlinks" runat="server">Öğretmen Listesi</asp:LinkButton>
                     </li>
 
                     <li class="ms-3 text-center">
                         <asp:LinkButton ID="LinkButton6" class="footerlinks" runat="server">Öğrenci Listesi</asp:LinkButton>
+                    </li>
+                    <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton7" class="footerlinks" runat="server">Öğrenci Not Giriş</asp:LinkButton>
+                    </li>
+                    <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton8" class="footerlinks" runat="server">Öğrenci Detaylı Bilgi</asp:LinkButton>
                     </li>
                 <%--Linkler--%>
             </ul>
