@@ -17,7 +17,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Öğrenci Profil Kayıt</h4>
+                           <h4>Öğrenci Kayıt</h4>
                            <span>Öğrenci Durumu - </span>
                            <asp:Label class="badge badge-pill badge-info" ID="Label1" runat="server" Text="Öğrenci Durumu"></asp:Label>
                         </center>

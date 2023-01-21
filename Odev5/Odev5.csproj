@@ -2194,14 +2194,19 @@
     <Content Include="kutuphane\fontawesome-free-6.2.1-web\fontawesome-free-6.2.1-web\svgs\solid\z.svg" />
     <Content Include="ogrencigiris.aspx" />
     <Content Include="ogrencikayit.aspx" />
+    <Content Include="ogrenciListesi.aspx" />
     <Content Include="ogretmengiris.aspx" />
+    <Content Include="ogretmenListesi.aspx" />
     <Content Include="resimler\1.jpeg" />
     <Content Include="resimler\2.jpeg" />
     <Content Include="resimler\3.jpeg" />
     <Content Include="resimler\4.jpeg" />
     <Content Include="resimler\adminuser.png" />
     <Content Include="resimler\generaluser.png" />
+    <Content Include="resimler\publisher.png" />
+    <Content Include="resimler\writer.png" />
     <Content Include="Web.config" />
+    <Content Include="ogrenciProfil.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnaSayfa.aspx.cs">
@@ -2246,12 +2251,26 @@
     <Compile Include="ogrencikayit.aspx.designer.cs">
       <DependentUpon>ogrencikayit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ogrenciListesi.aspx.cs">
+      <DependentUpon>ogrenciListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenciListesi.aspx.designer.cs">
+      <DependentUpon>ogrenciListesi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ogretmengiris.aspx.cs">
       <DependentUpon>ogretmengiris.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ogretmengiris.aspx.designer.cs">
       <DependentUpon>ogretmengiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenListesi.aspx.cs">
+      <DependentUpon>ogretmenListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogretmenListesi.aspx.designer.cs">
+      <DependentUpon>ogretmenListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -2260,6 +2279,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciProfil.aspx.cs">
+      <DependentUpon>ogrenciProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenciProfil.aspx.designer.cs">
+      <DependentUpon>ogrenciProfil.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
