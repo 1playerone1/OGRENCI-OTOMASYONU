@@ -178,7 +178,7 @@
                      <div class="col-md-4">
                         <label>Öğrenci Numarası</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="Öğrenci Numarası" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="Öğrenci Numarası"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
@@ -198,7 +198,7 @@
                      <div class="col-8 mx-auto">
                         <center>
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Kaydet" />
+                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Kaydet" OnClick="Button1_Click" />
                            </div>
                         </center>
                      </div>

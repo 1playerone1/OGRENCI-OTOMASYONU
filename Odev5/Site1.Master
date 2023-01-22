@@ -55,19 +55,15 @@
                              <ul class="navbar-nav">
 
                             <li class="nav-item">
-                                <asp:LinkButton ID="LinkButton1" class="nav-link active" runat="server">Öğrenci Girişi</asp:LinkButton>
-                            </li>
-
-                             <li class="nav-item">
-                                <asp:LinkButton ID="LinkButton3" class="nav-link active" runat="server">Öğrenci Kayıt</asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton1" class="nav-link active" runat="server" OnClick="LinkButton1_Click">Öğrenci Girişi</asp:LinkButton>
                             </li>
 
                             <li class="nav-item">
-                                <asp:LinkButton ID="LinkButton2" class="nav-link active" runat="server">Öğretmen Girişi</asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton2" class="nav-link active" runat="server" OnClick="LinkButton2_Click">Öğretmen Girişi</asp:LinkButton>
                             </li>
 
                             <li class="nav-item">
-                                <asp:LinkButton ID="LinkButton4" class="nav-link active" runat="server">Çıkış Yap</asp:LinkButton>
+                                <asp:LinkButton ID="LinkButton4" class="nav-link active" runat="server" OnClick="LinkButton4_Click" Visible="False">Çıkış Yap</asp:LinkButton>
                             </li>
                              </ul>
                         </div>
@@ -89,18 +85,30 @@
             <div class="card-header">
             <ul class="nav justify-content-center"> <%--footer içerik--%>
                 <%--Linkler--%>
+                    <%--<li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton9" class="footerlinks" runat="server" OnClick="LinkButton9_Click">Yönetici Giriş</asp:LinkButton>
+                    </li>--%>
+
+                    
+
                     <li class="ms-3 text-center">
-                        <asp:LinkButton ID="LinkButton5" class="footerlinks" runat="server">Öğretmen Listesi</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton3" class="footerlinks" runat="server" OnClick="LinkButton3_Click" Visible="False">Öğrenci Kayıt</asp:LinkButton>
                     </li>
 
                     <li class="ms-3 text-center">
-                        <asp:LinkButton ID="LinkButton6" class="footerlinks" runat="server">Öğrenci Listesi</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton6" class="footerlinks" runat="server" OnClick="LinkButton6_Click" Visible="False">Öğrenci Listesi</asp:LinkButton>
                     </li>
+
                     <li class="ms-3 text-center">
-                        <asp:LinkButton ID="LinkButton7" class="footerlinks" runat="server">Öğrenci Not Giriş</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton7" class="footerlinks" runat="server" OnClick="LinkButton7_Click" Visible="False">Öğrenci Not Giriş</asp:LinkButton>
                     </li>
+
                     <li class="ms-3 text-center">
-                        <asp:LinkButton ID="LinkButton8" class="footerlinks" runat="server">Öğrenci Detaylı Bilgi</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton8" class="footerlinks" runat="server" OnClick="LinkButton8_Click" Visible="False">Öğrenci Detaylı Bilgi</asp:LinkButton>
+                    </li>
+
+                    <li class="ms-3 text-center">
+                        <asp:LinkButton ID="LinkButton5" class="footerlinks" runat="server" OnClick="LinkButton5_Click" Visible="False">Öğretmen Listesi</asp:LinkButton>
                     </li>
                 <%--Linkler--%>
             </ul>
