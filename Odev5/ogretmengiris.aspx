@@ -37,7 +37,7 @@
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Şifre" TextMode="Password"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Giriş Yap" />
+                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Giriş Yap" OnClick="Button1_Click" />
                         </div>
                      </div>
                   </div>

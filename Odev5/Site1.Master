@@ -65,6 +65,9 @@
                             <li class="nav-item">
                                 <asp:LinkButton ID="LinkButton4" class="nav-link active" runat="server" OnClick="LinkButton4_Click" Visible="False">Çıkış Yap</asp:LinkButton>
                             </li>
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link" ID="LinkButton9" runat="server" OnClick="LinkButton7_Click" Visible="False">Merhaba!</asp:LinkButton>
+                             </li>
                              </ul>
                         </div>
                 </div>
@@ -92,7 +95,7 @@
                     
 
                     <li class="ms-3 text-center">
-                        <asp:LinkButton ID="LinkButton3" class="footerlinks" runat="server" OnClick="LinkButton3_Click" Visible="False">Öğrenci Kayıt</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton3" class="footerlinks" runat="server" OnClick="LinkButton3_Click" Visible="True">Öğrenci Kayıt</asp:LinkButton>
                     </li>
 
                     <li class="ms-3 text-center">
