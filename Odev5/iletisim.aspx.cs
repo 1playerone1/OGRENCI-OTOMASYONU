@@ -32,7 +32,7 @@ namespace Odev5
             smtp.Credentials = new System.Net.NetworkCredential("playerone1923@gmail.com", "oultwdavtttubdmq");
             smtp.Send(mail);
 
-            
+            Response.Write("<script>alert('Mesajınız Gönderildi!');</script>");
         }
     }
 }
