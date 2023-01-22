@@ -22,8 +22,52 @@ namespace Odev5
         // Kayıt Butonu
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //Response.Write("<script>alert('Test');</script>");
+            if (ayniOgrenciIDvarMi())
+            {
+                Response.Write("<script>alert('Girdiğiniz ID ile farklı bir öğrenci sistemde mevcut! " +
+                    "Farklı bir Öğrenci ID girmeyi deneyin...');</script>");
+            }
+            else
+            {
+                yeniKullaniciKayit();
+            }
+        }
 
+        // Aynı öğrenci ID varmı diye kontrol ediyor
+        bool ayniOgrenciIDvarMi()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * from ogrenci_profil where ogrenci_id='"
+                    + TextBox7.Text.Trim() + "';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count >= 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+                return false;
+            }
+        }
+
+        // Yeni Kullanıcı Kayıt
+        void yeniKullaniciKayit()
+        {
             try
             {
                 SqlConnection con = new SqlConnection(strcon);
