@@ -54,13 +54,13 @@
 
                         <div class="row">
                             <div class="col-4">
-                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Text="Ekle" />
+                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Text="Ekle" OnClick="Button2_Click" />
                             </div>
                             <div class="col-4">
-                                <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Güncelle" />
+                                <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Güncelle" OnClick="Button3_Click" />
                             </div>
                             <div class="col-4">
-                                <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Sil" />
+                                <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Sil" OnClick="Button4_Click" />
                             </div>
                         </div>
 
@@ -97,7 +97,14 @@
 
                         <div class="row">
                             <div class="col">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ogrenciDataConnectionString %>" SelectCommand="SELECT * FROM [ogretmen_profil]"></asp:SqlDataSource>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ogretmen_id" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="ogretmen_id" HeaderText="ogretmen_id" ReadOnly="True" SortExpression="ogretmen_id" />
+                                        <asp:BoundField DataField="ogretmen_adi" HeaderText="ogretmen_adi" SortExpression="ogretmen_adi" />
+                                        <asp:BoundField DataField="ogretmen_sifre" HeaderText="ogretmen_sifre" SortExpression="ogretmen_sifre" />
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                         </div>
 
