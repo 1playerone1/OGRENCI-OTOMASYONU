@@ -13,5 +13,25 @@ namespace Odev5
         {
 
         }
+        // Bul Butonu
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        // Ekle Butonu
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        // Güncelle Butonu
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+        // Sil Butonu
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

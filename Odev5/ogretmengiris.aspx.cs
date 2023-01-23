@@ -35,12 +35,17 @@ namespace Odev5
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('" + dr.GetValue(0).ToString() + "');</script>");
+                        Response.Write("<script>alert('Giriş Başarılı');</script>");
+                        Session["ogretmen_id"] = dr.GetValue(0).ToString();
+                        Session["ogretmen_adi"] = dr.GetValue(1).ToString();
+                        Session["kullaniciDurumu"] = "Öğretmen";
+                        //Session["ogrenci_durumu"] = dr.GetValue(11).ToString();
                     }
+                    Response.Redirect("AnaSayfa.aspx");
                 }
                 else
                 {
-                    Response.Write("<script>alert('Yanlış ID girdiniz!');</script>");
+                    Response.Write("<script>alert('Yanlış ID yada şifre girdiniz!');</script>");
                 }
             }
             catch (Exception ex)
