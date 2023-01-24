@@ -14,7 +14,7 @@ namespace Odev5
         {
 
         }
-
+        // Mail Gönderme Butonu
         protected void Button1_Click(object sender, EventArgs e)
         {
             MailMessage mail = new MailMessage();
